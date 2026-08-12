@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باقات قاعدة البيانات</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استدعاء خط تجوال للغة العربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                
+                <!-- الباقة الشهرية -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">شهري</h3>
+                    <p class="plan-type">مشترك</p>
+                    <div class="price-box">
+                        <div class="price">
+                            <span class="amount">15</span>
+                            <span class="currency">$</span>
+                        </div>
+                        <span class="duration">/ شهري</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> مساحة تخزين 10GB</li>
+                        <li><i class="fas fa-check"></i> نقل بيانات 100GB</li>
+                        <li><i class="fas fa-check"></i> دعم فني أساسي</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="selectPlan('شهري', 15)">اختيار الخطة</button>
+                </div>
+
+                <!-- الباقة السنوية (الأكثر طلباً) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">الأكثر طلباً</div>
+                    <h3 class="plan-name">سنوي</h3>
+                    <p class="plan-type">مشترك</p>
+                    <div class="old-price"><del>180 $</del></div>
+                    <div class="price-box">
+                        <div class="price">
+                            <span class="amount">59</span>
+                            <span class="currency">$</span>
+                        </div>
+                        <span class="duration">/ سنوي</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> مساحة تخزين 50GB</li>
+                        <li><i class="fas fa-check"></i> نقل بيانات غير محدود</li>
+                        <li><i class="fas fa-check"></i> دعم فني ذو أولوية</li>
+                    </ul>
+                    <button class="btn btn-solid" onclick="selectPlan('سنوي', 59)">اختيار الخطة</button>
+                </div>
+
+                <!-- الباقة الدائمة -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">دائمي</h3>
+                    <p class="plan-type">مشترك</p>
+                    <div class="old-price"><del>300 $</del></div>
+                    <div class="price-box">
+                        <div class="price">
+                            <span class="amount">89</span>
+                            <span class="currency">$</span>
+                        </div>
+                        <span class="duration">/ مدى الحياة</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> مساحة تخزين 100GB</li>
+                        <li><i class="fas fa-check"></i> نقل بيانات غير محدود</li>
+                        <li><i class="fas fa-check"></i> دعم فني VIP</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="selectPlan('دائمي', 89)">اختيار الخطة</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
